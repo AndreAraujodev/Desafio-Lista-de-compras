@@ -1,71 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./styles.css">
-  <script src="./script.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
-  <img src="./assets/logo.svg" alt="logomarca"/>
-  <main class="container">
-    <div class="back">
-      <img src="./assets/arrow-left.svg" alt="seta pra esquerda">
-      <span>Voltar</span>
-    </div>
-  <h1>Compras da semana</h1>
-  
-  <form>
-    <div class="addList">
-      <input type="text" placeholder="Adicione um novo item">
-      <button>Adicionar item</button>
-    </div>
-
-   
-      <div class="listContainer">
-      <div class="itemListName">
-        <input type="checkbox"/>
-        <span>Pão de forma</span>
-      </div>
-      <img src="./assets/trash.svg" alt="">
-      </div>
-      
-      <div class="listContainer">
-      <div class="itemListName">
-        <input type="checkbox"/>
-        <span>Pão de forma</span>
-      </div>
-      <img src="./assets/trash.svg" alt="">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <img src="./assets/logo.svg" alt="logomarca" />
+    <main class="container">
+      <div class="back" id="goBack">
+        <img src="./assets/arrow-left.svg" alt="seta pra esquerda" />
+        <span>Voltar</span>
       </div>
 
-        <div class="listContainer">
-      <div class="itemListName">
-        <input type="checkbox"/>
-        <span>Pão de forma</span>
-      </div>
-      <img src="./assets/trash.svg" alt="">
-      </div>
-      
+      <h1>Compras da semana</h1>
 
-    
-  </form>
+      <form>
+        <div class="addList">
+          <input type="text" id="inputText" placeholder="Adicione um novo item" />
+          <button id="btn">Adicionar item</button>
+        </div>
 
-  <footer>
-    <div class="alert">
-      <div class="alertIcon">
-        <img src="./assets/alert.svg" alt="exclamação">
-        <span>O item foi removido da lista</span>
-      </div>
-      <img src="./assets/close.svg" alt="">
-    </div>
+        <div id="list">
+          <div class="listContainer">
+            <div class="itemListName">
+              <input type="checkbox" />
+              <span>Pão de forma</span>
+            </div>
+            <img src="./assets/trash.svg" class="trash" alt="lixeira" />
+          </div>
 
-  </footer>
+          
+        </div>
+      </form>
 
-  </main>
-  
-</body>
+      <footer class="alert hide">
+        <div class="alertIcon">
+          <img src="./assets/alert.svg" alt="exclamação" />
+          <span>O item foi removido da lista</span>
+        </div>
+        <img src="./assets/close.svg" alt="fechar" />
+      </footer>
+    </main>
+  </body>
 </html>
